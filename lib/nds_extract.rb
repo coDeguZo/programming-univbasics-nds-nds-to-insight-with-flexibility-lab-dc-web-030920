@@ -49,10 +49,11 @@ def movies_with_director_key(name, movies_collection)
   # :director_name key. This addition can be done by using the provided
   # movie_with_director_name method
   new_array = []
-  index = 0
+  movie_index = 0
   while index < movies_collection.count do
+    movie_data = movies_collection[movie_index]
     new_array << movie_with_director_name(name, movie_data)
-    index += 1
+    movie_index += 1
   end
   return new_array
 end
