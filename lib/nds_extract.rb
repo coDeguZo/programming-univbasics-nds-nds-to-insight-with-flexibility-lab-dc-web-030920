@@ -50,7 +50,7 @@ def movies_with_director_key(name, movies_collection)
   # movie_with_director_name method
   new_array = []
   movie_index = 0
-  while index < movies_collection.count do
+  while mvoie_index < movies_collection.count do
     movie_data = movies_collection[movie_index]
     new_array << movie_with_director_name(name, movie_data)
     movie_index += 1
