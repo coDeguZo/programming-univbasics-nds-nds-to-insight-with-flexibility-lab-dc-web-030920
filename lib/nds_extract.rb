@@ -76,7 +76,7 @@ def gross_per_studio(collection)
   while index < collection.count do
     movie = collection[index]
     if !results[movie[:studio]] 
-        results[movie[:studio]] == movie[:worldwide_gross]
+        results[movie[:studio]] = movie[:worldwide_gross]
     else
         results[movie[:studio]] += movie[:worldwide_gross]
     end
@@ -84,6 +84,7 @@ def gross_per_studio(collection)
     end
 results
 end
+
 
 def movies_with_directors_set(source)
   # GOAL: For each director, find their :movies Array and stick it in a new Array
