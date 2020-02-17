@@ -1,6 +1,12 @@
 # Provided, don't edit
 require 'directors_database'
 
+def print(src)
+  pp src
+end
+
+print(directors_database)
+
 # A method we're giving you. This "flattens"  Arrays of Arrays so: [[1,2],
 # [3,4,5], [6]] => [1,2,3,4,5,6].
 
@@ -88,9 +94,3 @@ def studios_totals(nds)
   movies_with_director_names = flatten_a_o_a(a_o_a_movies_with_director_names)
   return gross_per_studio(movies_with_director_names)
 end
-
-def print(src)
-  pp src
-end
-
-print(directors_database)
