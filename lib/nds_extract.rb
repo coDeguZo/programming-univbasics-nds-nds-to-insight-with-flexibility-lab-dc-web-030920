@@ -89,4 +89,5 @@ def studios_totals(nds)
   return gross_per_studio(movies_with_director_names)
 end
 
-directors_database
+poke = "5"
+puts poke
